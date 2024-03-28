@@ -1,0 +1,152 @@
+.container {
+  width: 80%;
+  height: 85%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #6da5c0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 3rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+}
+
+.loginLeft {
+  height: 100%;
+  width: 100%;
+  background-color: #30486b;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  box-shadow: 8px 0px 7px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.loginLeft img {
+  max-height: 100%;
+  max-width: 98%;
+  align-self: flex-end;
+}
+
+.loginRight {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 3.5rem;
+  position: relative;
+}
+
+.loginRight h1 {
+  margin-bottom: 4.5rem;
+  font-size: 1.9rem;
+}
+
+.loginRight * {
+  display: block;
+}
+
+.formControl {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.formControl span {
+  position: absolute;
+  left: 2rem;
+  margin-top: 2.5px;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.formControl span:nth-of-type(2) {
+  font-size: 1.7rem;
+  margin-top: 6px;
+}
+
+.loginRight input {
+  width: 90%;
+  height: 2.6rem;
+  background-color: rgba(7, 46, 51, 0.4);
+  padding: 0.5rem;
+  padding-left: 3.2rem;
+  border: 1px solid #fff;
+  border-radius: 1.5rem;
+  outline: none;
+  font-size: 1rem;
+  margin: 1.8em auto;
+}
+
+.loginRight input::placeholder {
+  color: #efefef; /* Change to the desired color */
+}
+
+.loginRight button {
+  width: 7em;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  background: linear-gradient(270deg, #293d61 0%, #6da5c0 33.33%, #0f969c 66.66%, #068d87 100%);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin: 0 auto;
+}
+
+.loginRight button:hover {
+  border: 1px solid #000;
+}
+
+.loginRight a {
+  color: #fff;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+  margin-top: 0.5rem;
+}
+
+.loginRight a:hover {
+  color: #000;
+}
+
+.credits {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 1.7rem;
+  letter-spacing: 1.3px;
+}
+
+.logo {
+  position: absolute;
+  left: -58px;
+  top: -40px;
+}
+
+.logo img {
+  width: 120px;
+  height: 120px;
+}
+
+.logo::after {
+  content: "Welcome Back";
+  position: absolute;
+  top: 0;
+  left: 90px;
+  margin-top: 30px;
+  width: 300px;
+  height: 60px;
+  background-color: #1e1e1e;
+  border-top-right-radius: 1.3rem;
+  border-bottom-right-radius: 1.3rem;
+  text-align: center;
+  font-size: 2rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
